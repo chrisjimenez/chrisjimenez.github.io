@@ -1,0 +1,314 @@
+/**
+MOBILE FIRST STYLING
+**/
+
+/****************************
+CONTENTS
+****************************/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+
+  background-image: url(../images/bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000000;
+}
+
+.shadow-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:black;
+  z-index:1;
+
+  -webkit-animation: shadowAnim 10s infinite; /* Safari 4+ */
+  -moz-animation:    shadowAnim 10s infinite; /* Fx 5+ */
+  -o-animation:      shadowAnim 10s infinite; /* Opera 12+ */
+  animation:         shadowAnim 10s infinite;
+
+}
+
+.container {
+  position: absolute;
+  max-width: 600px;
+  width: 100%;
+  letter-spacing: 1.2px;
+  opacity: 0.8;
+  z-index: 2;
+
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+
+
+  color: #00D2EA;
+  text-align: center;
+}
+
+.header {
+  font-size: 2.2em;
+}
+
+.content {
+  font-size: 0.75em;
+  line-height: 1.5;
+  margin-left: 3em;
+  margin-right:3em;
+}
+
+/****************************
+ICONS
+****************************/
+.icon-list {
+  text-align: center;
+}
+
+.icon {
+  background: #18CAE6;
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  margin-left: 0.2em;
+  opacity: 0.5;
+}
+
+.github-icon {
+  background: url(../images/github-icon.png);
+  background-size: 48px 48px;
+}
+
+.angellist-icon {
+  background: url(../images/angellist-icon.png);
+  background-size: 48px 48px;
+}
+
+.twitter-icon {
+  background: url(../images/twitter-icon.png);
+  background-size: 48px 48px;
+}
+
+.email-icon {
+  background: url(../images/email-icon.png);
+  background-size: 48px 48px;
+}
+
+.linkedin-icon {
+  background: url(../images/linkedin-icon.png);
+  background-size: 48px 48px;
+}
+
+
+.youtube-icon {
+  background: url(../images/youtube-icon.png);
+  background-size: 48px 48px;
+}
+
+
+/****************************
+FADEIN EFFECTS
+****************************/
+.header {
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+}
+
+.content {
+  animation: fadein 7s;
+  -webkit-animation: fadein 7s;
+}
+
+.icon:hover {
+  animation: iconHover 1s;
+  -webkit-animation: iconHover 1s;
+}
+
+/**
+Icon hover animation
+**/
+@keyframes iconHover {
+    from {
+      opacity:0.5;
+    } to {
+      opacity:1;
+    }
+}
+
+
+@-webkit-keyframes iconHover {
+    from {
+      opacity:0.5;
+    } to {
+      opacity:1;
+    }
+}
+
+
+/**
+Fade in effects for body
+**/
+@keyframes fadein {
+    from {
+      opacity:0;
+    } to {
+      opacity:0.5;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+      opacity:0;
+    } to {
+      opacity:0.5;
+    }
+}
+/****************************
+SHADOW BG EFFECT
+*****************************/
+@-webkit-keyframes shadowAnim {
+  0%   { opacity: 0.30; }
+  5%   { opacity: 0.35; }
+  10%   { opacity: 0.40; }
+  15%   { opacity: 0.45; }
+  20%   { opacity: 0.50; }
+  25%   { opacity: 0.55; }
+  30%   { opacity: 0.60; }
+  35%   { opacity: 0.65; }
+  40%   { opacity: 0.70; }
+  45%   { opacity: 0.75; }
+  50% { opacity: 0.85; }
+  55%   { opacity: 0.75; }
+  60%   { opacity: 0.70; }
+  65%   { opacity: 0.65; }
+  70%   { opacity: 0.60; }
+  75%   { opacity: 0.55; }
+  80%   { opacity: 0.50; }
+  85%   { opacity: 0.45; }
+  90%   { opacity: 0.40; }
+  95%   { opacity: 0.35; }
+  100% { opacity: 0.30; }
+}
+@-moz-keyframes shadowAnim{
+  0%   { opacity: 0.30; }
+  5%   { opacity: 0.35; }
+  10%   { opacity: 0.40; }
+  15%   { opacity: 0.45; }
+  20%   { opacity: 0.50; }
+  25%   { opacity: 0.55; }
+  30%   { opacity: 0.60; }
+  35%   { opacity: 0.65; }
+  40%   { opacity: 0.70; }
+  45%   { opacity: 0.75; }
+  50% { opacity: 0.85; }
+  55%   { opacity: 0.75; }
+  60%   { opacity: 0.70; }
+  65%   { opacity: 0.65; }
+  70%   { opacity: 0.60; }
+  75%   { opacity: 0.55; }
+  80%   { opacity: 0.50; }
+  85%   { opacity: 0.45; }
+  90%   { opacity: 0.40; }
+  95%   { opacity: 0.35; }
+  100% { opacity: 0.30; }
+}
+@-o-keyframes shadowAnim {
+  0%   { opacity: 0.30; }
+  5%   { opacity: 0.35; }
+  10%   { opacity: 0.40; }
+  15%   { opacity: 0.45; }
+  20%   { opacity: 0.50; }
+  25%   { opacity: 0.55; }
+  30%   { opacity: 0.60; }
+  35%   { opacity: 0.65; }
+  40%   { opacity: 0.70; }
+  45%   { opacity: 0.75; }
+  50% { opacity: 0.85; }
+  55%   { opacity: 0.75; }
+  60%   { opacity: 0.70; }
+  65%   { opacity: 0.65; }
+  70%   { opacity: 0.60; }
+  75%   { opacity: 0.55; }
+  80%   { opacity: 0.50; }
+  85%   { opacity: 0.45; }
+  90%   { opacity: 0.40; }
+  95%   { opacity: 0.35; }
+  100% { opacity: 0.30; }
+}
+@keyframes shadowAnim {
+  0%   { opacity: 0.30; }
+  5%   { opacity: 0.35; }
+  10%   { opacity: 0.40; }
+  15%   { opacity: 0.45; }
+  20%   { opacity: 0.50; }
+  25%   { opacity: 0.55; }
+  30%   { opacity: 0.60; }
+  35%   { opacity: 0.65; }
+  40%   { opacity: 0.70; }
+  45%   { opacity: 0.75; }
+  50% { opacity: 0.85; }
+  55%   { opacity: 0.75; }
+  60%   { opacity: 0.70; }
+  65%   { opacity: 0.65; }
+  70%   { opacity: 0.60; }
+  75%   { opacity: 0.55; }
+  80%   { opacity: 0.50; }
+  85%   { opacity: 0.45; }
+  90%   { opacity: 0.40; }
+  95%   { opacity: 0.35; }
+  100% { opacity: 0.30; }
+}
+
+/****************************
+RESPONSIVE STYLE ADJUSTMENTS
+*****************************/
+@media only screen and (min-width: 400px) {
+
+  .header {
+    font-size: 3.2em;
+  }
+
+  .content {
+    margin-top:2em;
+    font-size: 1.0em;
+  }
+
+  .icon-list{
+    margin-top:1em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+  .header {
+    font-size: 4em;
+  }
+
+  .content {
+    font-size: 1.0em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .header {
+    font-size: 5em;
+  }
+
+  .content {
+    font-size: 1.5em;
+  }
+}
