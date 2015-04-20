@@ -9,9 +9,8 @@ body {
   height: 100%;
   position: relative;
 
-
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
 
   background-image: url(../images/bg.png);
   background-position: center center;
