@@ -28,10 +28,10 @@ body {
   background-color:black;
   z-index:1;
 
-  -webkit-animation: shadowAnim 9s infinite; 
-  -moz-animation:    shadowAnim 9s infinite; 
-  -o-animation:      shadowAnim 9s infinite; 
-  animation:         shadowAnim 9s infinite;
+  -webkit-animation: shadowAnim 10s infinite; 
+  -moz-animation:    shadowAnim 10s infinite; 
+  -o-animation:      shadowAnim 10s infinite; 
+  animation:         shadowAnim 10s infinite;
 
 }
 
@@ -41,6 +41,8 @@ body {
   width: 100%;
   letter-spacing: 1.2px;
   z-index: 2;
+  opacity:0.7;
+
 
 
   top: 50%;
@@ -180,7 +182,7 @@ Fade in effects for body
     from {
       opacity:0;
     } to {
-      opacity:0.5;
+      opacity:1;
     }
 }
 
@@ -188,7 +190,7 @@ Fade in effects for body
     from {
       opacity:0;
     } to {
-      opacity:0.5;
+      opacity:1;
     }
 }
 
@@ -196,7 +198,7 @@ Fade in effects for body
     from {
       opacity:0;
     } to {
-      opacity:0.5;
+      opacity:1;
     }
 }
 
@@ -204,7 +206,7 @@ Fade in effects for body
     from {
       opacity:0;
     } to {
-      opacity:0.5;
+      opacity:1;
     }
 }
 
@@ -212,96 +214,96 @@ Fade in effects for body
 SHADOW BG EFFECT
 *****************************/
 @-webkit-keyframes shadowAnim {
-  0%   { opacity: 0.30; }
-  5%   { opacity: 0.35; }
-  10%   { opacity: 0.40; }
-  15%   { opacity: 0.45; }
-  20%   { opacity: 0.50; }
-  25%   { opacity: 0.55; }
-  30%   { opacity: 0.60; }
-  35%   { opacity: 0.65; }
-  40%   { opacity: 0.70; }
-  45%   { opacity: 0.75; }
-  50% { opacity: 0.85; }
-  55%   { opacity: 0.75; }
-  60%   { opacity: 0.70; }
-  65%   { opacity: 0.65; }
-  70%   { opacity: 0.60; }
-  75%   { opacity: 0.55; }
-  80%   { opacity: 0.50; }
-  85%   { opacity: 0.45; }
-  90%   { opacity: 0.40; }
-  95%   { opacity: 0.35; }
-  100% { opacity: 0.30; }
+  0%   { opacity: 0.40; }
+  5%   { opacity: 0.45; }
+  10%   { opacity: 0.50; }
+  15%   { opacity: 0.55; }
+  20%   { opacity: 0.60; }
+  25%   { opacity: 0.65; }
+  30%   { opacity: 0.70; }
+  35%   { opacity: 0.75; }
+  40%   { opacity: 0.80; }
+  45%   { opacity: 0.85; }
+  50% { opacity: 0.90; }
+  55%   { opacity: 0.85; }
+  60%   { opacity: 0.80; }
+  65%   { opacity: 0.75; }
+  70%   { opacity: 0.70; }
+  75%   { opacity: 0.65; }
+  80%   { opacity: 0.60; }
+  85%   { opacity: 0.55; }
+  90%   { opacity: 0.50; }
+  95%   { opacity: 0.45; }
+  100% { opacity: 0.40; }
 }
 @-moz-keyframes shadowAnim{
-  0%   { opacity: 0.30; }
-  5%   { opacity: 0.35; }
-  10%   { opacity: 0.40; }
-  15%   { opacity: 0.45; }
-  20%   { opacity: 0.50; }
-  25%   { opacity: 0.55; }
-  30%   { opacity: 0.60; }
-  35%   { opacity: 0.65; }
-  40%   { opacity: 0.70; }
-  45%   { opacity: 0.75; }
-  50% { opacity: 0.85; }
-  55%   { opacity: 0.75; }
-  60%   { opacity: 0.70; }
-  65%   { opacity: 0.65; }
-  70%   { opacity: 0.60; }
-  75%   { opacity: 0.55; }
-  80%   { opacity: 0.50; }
-  85%   { opacity: 0.45; }
-  90%   { opacity: 0.40; }
-  95%   { opacity: 0.35; }
-  100% { opacity: 0.30; }
+  0%   { opacity: 0.40; }
+  5%   { opacity: 0.45; }
+  10%   { opacity: 0.50; }
+  15%   { opacity: 0.55; }
+  20%   { opacity: 0.60; }
+  25%   { opacity: 0.65; }
+  30%   { opacity: 0.70; }
+  35%   { opacity: 0.75; }
+  40%   { opacity: 0.80; }
+  45%   { opacity: 0.85; }
+  50% { opacity: 0.90; }
+  55%   { opacity: 0.85; }
+  60%   { opacity: 0.80; }
+  65%   { opacity: 0.75; }
+  70%   { opacity: 0.70; }
+  75%   { opacity: 0.65; }
+  80%   { opacity: 0.60; }
+  85%   { opacity: 0.55; }
+  90%   { opacity: 0.50; }
+  95%   { opacity: 0.45; }
+  100% { opacity: 0.40; }
 }
 @-o-keyframes shadowAnim {
-  0%   { opacity: 0.30; }
-  5%   { opacity: 0.35; }
-  10%   { opacity: 0.40; }
-  15%   { opacity: 0.45; }
-  20%   { opacity: 0.50; }
-  25%   { opacity: 0.55; }
-  30%   { opacity: 0.60; }
-  35%   { opacity: 0.65; }
-  40%   { opacity: 0.70; }
-  45%   { opacity: 0.75; }
-  50% { opacity: 0.85; }
-  55%   { opacity: 0.75; }
-  60%   { opacity: 0.70; }
-  65%   { opacity: 0.65; }
-  70%   { opacity: 0.60; }
-  75%   { opacity: 0.55; }
-  80%   { opacity: 0.50; }
-  85%   { opacity: 0.45; }
-  90%   { opacity: 0.40; }
-  95%   { opacity: 0.35; }
-  100% { opacity: 0.30; }
+  0%   { opacity: 0.40; }
+  5%   { opacity: 0.45; }
+  10%   { opacity: 0.50; }
+  15%   { opacity: 0.55; }
+  20%   { opacity: 0.60; }
+  25%   { opacity: 0.65; }
+  30%   { opacity: 0.70; }
+  35%   { opacity: 0.75; }
+  40%   { opacity: 0.80; }
+  45%   { opacity: 0.85; }
+  50% { opacity: 0.90; }
+  55%   { opacity: 0.85; }
+  60%   { opacity: 0.80; }
+  65%   { opacity: 0.75; }
+  70%   { opacity: 0.70; }
+  75%   { opacity: 0.65; }
+  80%   { opacity: 0.60; }
+  85%   { opacity: 0.55; }
+  90%   { opacity: 0.50; }
+  95%   { opacity: 0.45; }
+  100% { opacity: 0.40; }
 }
 @keyframes shadowAnim {
-  0%   { opacity: 0.30; }
-  5%   { opacity: 0.35; }
-  10%   { opacity: 0.40; }
-  15%   { opacity: 0.45; }
-  20%   { opacity: 0.50; }
-  25%   { opacity: 0.55; }
-  30%   { opacity: 0.60; }
-  35%   { opacity: 0.65; }
-  40%   { opacity: 0.70; }
-  45%   { opacity: 0.75; }
-  50% { opacity: 0.85; }
-  55%   { opacity: 0.75; }
-  60%   { opacity: 0.70; }
-  65%   { opacity: 0.65; }
-  70%   { opacity: 0.60; }
-  75%   { opacity: 0.55; }
-  80%   { opacity: 0.50; }
-  85%   { opacity: 0.45; }
-  90%   { opacity: 0.40; }
-  95%   { opacity: 0.35; }
-  100% { opacity: 0.30; }
+  0%   { opacity: 0.40; }
+  5%   { opacity: 0.45; }
+  10%   { opacity: 0.50; }
+  15%   { opacity: 0.55; }
+  20%   { opacity: 0.60; }
+  25%   { opacity: 0.65; }
+  30%   { opacity: 0.70; }
+  35%   { opacity: 0.75; }
+  40%   { opacity: 0.80; }
+  45%   { opacity: 0.85; }
+  50% { opacity: 0.90; }
+  55%   { opacity: 0.85; }
+  60%   { opacity: 0.80; }
+  65%   { opacity: 0.75; }
+  70%   { opacity: 0.70; }
+  75%   { opacity: 0.65; }
+  80%   { opacity: 0.60; }
+  85%   { opacity: 0.55; }
+  90%   { opacity: 0.50; }
+  95%   { opacity: 0.45; }
+  100% { opacity: 0.40; }
 }
 
 /****************************
