@@ -1,11 +1,6 @@
-/**
-MOBILE FIRST STYLING
-**/
-
 /****************************
 CONTENTS
 ****************************/
-
 html {
   height: 100%;
 }
@@ -33,10 +28,10 @@ body {
   background-color:black;
   z-index:1;
 
-  -webkit-animation: shadowAnim 10s infinite; /* Safari 4+ */
-  -moz-animation:    shadowAnim 10s infinite; /* Fx 5+ */
-  -o-animation:      shadowAnim 10s infinite; /* Opera 12+ */
-  animation:         shadowAnim 10s infinite;
+  -webkit-animation: shadowAnim 9s infinite; 
+  -moz-animation:    shadowAnim 9s infinite; 
+  -o-animation:      shadowAnim 9s infinite; 
+  animation:         shadowAnim 9s infinite;
 
 }
 
@@ -45,7 +40,6 @@ body {
   max-width: 600px;
   width: 100%;
   letter-spacing: 1.2px;
-  opacity: 0.8;
   z-index: 2;
 
 
@@ -123,18 +117,24 @@ ICONS
 FADEIN EFFECTS
 ****************************/
 .header {
-  animation: fadein 2s;
   -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -0-animation: fadein 2s;
+  animation: fadein 2s;
 }
 
 .content {
-  animation: fadein 7s;
-  -webkit-animation: fadein 7s;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -0-animation: fadein 3s;
+  animation: fadein 3s;
 }
 
 .icon:hover {
-  animation: iconHover 1s;
   -webkit-animation: iconHover 1s;
+  -moz-animation: iconHover 1s;
+  -0-animation: iconHover 1s;
+  animation: iconHover 1s;
 }
 
 /**
@@ -157,6 +157,21 @@ Icon hover animation
     }
 }
 
+@-moz-keyframes iconHover {
+    from {
+      opacity:0.5;
+    } to {
+      opacity:1;
+    }
+}
+
+@-o-keyframes iconHover {
+    from {
+      opacity:0.5;
+    } to {
+      opacity:1;
+    }
+}
 
 /**
 Fade in effects for body
@@ -176,6 +191,23 @@ Fade in effects for body
       opacity:0.5;
     }
 }
+
+@-moz-keyframes fadein {
+    from {
+      opacity:0;
+    } to {
+      opacity:0.5;
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+      opacity:0;
+    } to {
+      opacity:0.5;
+    }
+}
+
 /****************************
 SHADOW BG EFFECT
 *****************************/
@@ -309,6 +341,6 @@ RESPONSIVE STYLE ADJUSTMENTS
   }
 
   .content {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
