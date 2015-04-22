@@ -1,17 +1,17 @@
 /* TEAM */
-                            
-Chris Jimenez - Software dev
-chrisajim@gmail.com                     
-@chrisjimenenezny
-                            
-							
-/* THANKS */
-							
-normalize folks!                        
 
-                            
+Chris Jimenez - software dev
+chrisajim@gmail.com
+@chrisjimenenezny
+
+
+/* THANKS */
+
+normalize folks!
+
+
 /* SITE */
-                            
-Last update: 2015/04/19 
-Standards: HTML5, CSS3,..                       
+
+Last update: 2015/04/19
+Standards: HTML5, CSS3,..
 Components: normalize.css
