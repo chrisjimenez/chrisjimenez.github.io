@@ -1,17 +1,16 @@
 /* TEAM */
 
-Chris Jimenez - software dev
+Chris Jimenez - software dev in NY
 chrisajim@gmail.com
 @chrisjimenenezny
 
 
 /* THANKS */
 
-normalize folks!
+fa folks for the icons, google folks for the fonts!
 
 
 /* SITE */
 
-Last update: 2015/04/19
+Last update: 2016/10/22
 Standards: HTML5, CSS3,..
-Components: normalize.css

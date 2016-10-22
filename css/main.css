@@ -1,347 +1,73 @@
 /****************************
 CONTENTS
 ****************************/
-html {
+
+html, body {
   height: 100%;
 }
 
 body {
-  height: 100%;
-  position: relative;
-
-  font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-
-  background-image: url(../images/bg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50;
+  transition: background-color 2s ease-in-out;
 }
 
-.shadow-bg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color:black;
-  z-index:1;
-
-  -webkit-animation: shadowAnim 10s infinite; 
-  -moz-animation:    shadowAnim 10s infinite; 
-  -o-animation:      shadowAnim 10s infinite; 
-  animation:         shadowAnim 10s infinite;
-
+.container * {
+  color: #ffffff;
 }
 
 .container {
-  position: absolute;
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
-  letter-spacing: 1.2px;
-  z-index: 2;
-  opacity:0.7;
+  padding: 0 20px;
+}
 
-
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-
-
-  color: #00D2EA;
+.container .header,
+.container .bio {
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
-.header {
-  font-size: 2.2em;
+.container .header {
+  font-size: 4em;
 }
 
-.content {
-  font-size: 0.75em;
-  line-height: 1.5;
-  margin-left: 3em;
-  margin-right:3em;
+.container .bio {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  letter-spacing: .03em;
 }
 
-/****************************
-ICONS
-****************************/
-.icon-list {
+.container .icon-list {
   text-align: center;
+  list-style: none;
+  padding: 0;
 }
 
-.icon {
-  background: #18CAE6;
-  width: 48px;
-  height: 48px;
+.container .icon-list li {
   display: inline-block;
-  margin-left: 0.2em;
-  opacity: 0.5;
+  margin: 1em;
 }
 
-.github-icon {
-  background: url(../images/github-icon.png);
-  background-size: 48px 48px;
+.container .bio a,
+.container .icon-list a{
+  text-shadow: -1px 1px 0 #2c3e50, -2px 2px 0 #0a0e27;
+  transition: text-shadow .3s ease-in-out;
 }
 
-.angellist-icon {
-  background: url(../images/angellist-icon.png);
-  background-size: 48px 48px;
+.container .icon-list a {
+  font-size: 3em;
 }
 
-.twitter-icon {
-  background: url(../images/twitter-icon.png);
-  background-size: 48px 48px;
+.container .bio a:hover,
+.container .icon-list a:hover{
+  text-shadow: none;
 }
 
-.email-icon {
-  background: url(../images/email-icon.png);
-  background-size: 48px 48px;
-}
-
-.linkedin-icon {
-  background: url(../images/linkedin-icon.png);
-  background-size: 48px 48px;
-}
-
-
-.youtube-icon {
-  background: url(../images/youtube-icon.png);
-  background-size: 48px 48px;
-}
-
-
-/****************************
-FADEIN EFFECTS
-****************************/
-.header {
-  -webkit-animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  -0-animation: fadein 2s;
-  animation: fadein 2s;
-}
-
-.content {
-  -webkit-animation: fadein 3s;
-  -moz-animation: fadein 3s;
-  -0-animation: fadein 3s;
-  animation: fadein 3s;
-}
-
-.icon:hover {
-  -webkit-animation: iconHover 1s;
-  -moz-animation: iconHover 1s;
-  -0-animation: iconHover 1s;
-  animation: iconHover 1s;
-}
-
-/**
-Icon hover animation
-**/
-@keyframes iconHover {
-    from {
-      opacity:0.5;
-    } to {
-      opacity:1;
-    }
-}
-
-
-@-webkit-keyframes iconHover {
-    from {
-      opacity:0.5;
-    } to {
-      opacity:1;
-    }
-}
-
-@-moz-keyframes iconHover {
-    from {
-      opacity:0.5;
-    } to {
-      opacity:1;
-    }
-}
-
-@-o-keyframes iconHover {
-    from {
-      opacity:0.5;
-    } to {
-      opacity:1;
-    }
-}
-
-/**
-Fade in effects for body
-**/
-@keyframes fadein {
-    from {
-      opacity:0;
-    } to {
-      opacity:1;
-    }
-}
-
-@-webkit-keyframes fadein {
-    from {
-      opacity:0;
-    } to {
-      opacity:1;
-    }
-}
-
-@-moz-keyframes fadein {
-    from {
-      opacity:0;
-    } to {
-      opacity:1;
-    }
-}
-
-@-o-keyframes fadein {
-    from {
-      opacity:0;
-    } to {
-      opacity:1;
-    }
-}
-
-/****************************
-SHADOW BG EFFECT
-*****************************/
-@-webkit-keyframes shadowAnim {
-  0%   { opacity: 0.40; }
-  5%   { opacity: 0.45; }
-  10%   { opacity: 0.50; }
-  15%   { opacity: 0.55; }
-  20%   { opacity: 0.60; }
-  25%   { opacity: 0.65; }
-  30%   { opacity: 0.70; }
-  35%   { opacity: 0.75; }
-  40%   { opacity: 0.80; }
-  45%   { opacity: 0.85; }
-  50% { opacity: 0.90; }
-  55%   { opacity: 0.85; }
-  60%   { opacity: 0.80; }
-  65%   { opacity: 0.75; }
-  70%   { opacity: 0.70; }
-  75%   { opacity: 0.65; }
-  80%   { opacity: 0.60; }
-  85%   { opacity: 0.55; }
-  90%   { opacity: 0.50; }
-  95%   { opacity: 0.45; }
-  100% { opacity: 0.40; }
-}
-@-moz-keyframes shadowAnim{
-  0%   { opacity: 0.40; }
-  5%   { opacity: 0.45; }
-  10%   { opacity: 0.50; }
-  15%   { opacity: 0.55; }
-  20%   { opacity: 0.60; }
-  25%   { opacity: 0.65; }
-  30%   { opacity: 0.70; }
-  35%   { opacity: 0.75; }
-  40%   { opacity: 0.80; }
-  45%   { opacity: 0.85; }
-  50% { opacity: 0.90; }
-  55%   { opacity: 0.85; }
-  60%   { opacity: 0.80; }
-  65%   { opacity: 0.75; }
-  70%   { opacity: 0.70; }
-  75%   { opacity: 0.65; }
-  80%   { opacity: 0.60; }
-  85%   { opacity: 0.55; }
-  90%   { opacity: 0.50; }
-  95%   { opacity: 0.45; }
-  100% { opacity: 0.40; }
-}
-@-o-keyframes shadowAnim {
-  0%   { opacity: 0.40; }
-  5%   { opacity: 0.45; }
-  10%   { opacity: 0.50; }
-  15%   { opacity: 0.55; }
-  20%   { opacity: 0.60; }
-  25%   { opacity: 0.65; }
-  30%   { opacity: 0.70; }
-  35%   { opacity: 0.75; }
-  40%   { opacity: 0.80; }
-  45%   { opacity: 0.85; }
-  50% { opacity: 0.90; }
-  55%   { opacity: 0.85; }
-  60%   { opacity: 0.80; }
-  65%   { opacity: 0.75; }
-  70%   { opacity: 0.70; }
-  75%   { opacity: 0.65; }
-  80%   { opacity: 0.60; }
-  85%   { opacity: 0.55; }
-  90%   { opacity: 0.50; }
-  95%   { opacity: 0.45; }
-  100% { opacity: 0.40; }
-}
-@keyframes shadowAnim {
-  0%   { opacity: 0.40; }
-  5%   { opacity: 0.45; }
-  10%   { opacity: 0.50; }
-  15%   { opacity: 0.55; }
-  20%   { opacity: 0.60; }
-  25%   { opacity: 0.65; }
-  30%   { opacity: 0.70; }
-  35%   { opacity: 0.75; }
-  40%   { opacity: 0.80; }
-  45%   { opacity: 0.85; }
-  50% { opacity: 0.90; }
-  55%   { opacity: 0.85; }
-  60%   { opacity: 0.80; }
-  65%   { opacity: 0.75; }
-  70%   { opacity: 0.70; }
-  75%   { opacity: 0.65; }
-  80%   { opacity: 0.60; }
-  85%   { opacity: 0.55; }
-  90%   { opacity: 0.50; }
-  95%   { opacity: 0.45; }
-  100% { opacity: 0.40; }
-}
-
-/****************************
-RESPONSIVE STYLE ADJUSTMENTS
-*****************************/
-@media only screen and (min-width: 400px) {
-
-  .header {
-    font-size: 3.2em;
-  }
-
-  .content {
-    margin-top:2em;
-    font-size: 1.0em;
-  }
-
-  .icon-list{
-    margin-top:1em;
-  }
-}
-
-@media only screen and (min-width: 800px) {
-
-  .header {
-    font-size: 4em;
-  }
-
-  .content {
-    font-size: 1.0em;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-
-  .header {
-    font-size: 5em;
-  }
-
-  .content {
-    font-size: 1.2em;
-  }
+.container .icon-list a:hover {
+  font-size: 2.8em;
+  padding: .03em;
 }
