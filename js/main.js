@@ -12,6 +12,6 @@
   setInterval(function(){
     var color = colors[Math.floor(Math.random() * colors.length)];
     document.body.style.backgroundColor = color;
-  }, 30000);
+  }, 15000);
 
 })()
