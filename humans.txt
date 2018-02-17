@@ -1,16 +1,10 @@
 /* TEAM */
 
-Chris Jimenez - software dev in NY
+Chris Jimenez - software engineerin in NY
 chrisajim@gmail.com
 @chrisjimenenezny
 
-
-/* THANKS */
-
-fa folks for the icons, google folks for the fonts!
-
-
 /* SITE */
 
-Last update: 2016/10/22
+Last update: 2018/02/16
 Standards: HTML5, CSS3,..
