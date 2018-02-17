@@ -6,5 +6,5 @@ chrisajim@gmail.com
 
 /* SITE */
 
-Last update: 2018/02/16
+Last update: 2018/02/17
 Standards: HTML5, CSS3,..
