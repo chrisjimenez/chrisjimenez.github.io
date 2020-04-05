@@ -8,7 +8,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #C0392B;
+  background-color: #D35400;
   transition: background-color 2s ease-in-out;
 }
 
