@@ -13,9 +13,9 @@ body {
 }
 
 .container {
+  display: bblock;
   max-width: 400px;
   width: 100%;
-  padding: 0 20px;
 }
 
 .container .header,
@@ -42,6 +42,8 @@ body {
 }
 
 .container .icon-list {
+  display: block;
+  margin: 0 1em;
   text-align: center;
   list-style: none;
   padding: 0;
