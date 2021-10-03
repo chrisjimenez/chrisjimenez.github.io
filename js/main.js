@@ -1,5 +1,5 @@
-(function(){
-  var colors = [
+(() => {
+  const colors = [
     '#3498db',
     '#c0392b',
     '#16a085',
@@ -9,8 +9,8 @@
     '#e67e22'
   ];
 
-  setInterval(function(){
-    var color = colors[Math.floor(Math.random() * colors.length)];
+  setInterval(() => {
+    const color = colors[Math.floor(Math.random() * colors.length)];
     document.body.style.backgroundColor = color;
   }, 8000);
 })();
