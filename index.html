@@ -29,9 +29,6 @@
           <a href="https://www.linkedin.com/in/chrisajim/" title="LinkedIn"><span class="icon icon--linkedin" aria-hidden="true"></span></a>
         </li>
         <li>
-          <a href="https://www.twitter.com/chrisajim" title="Twitter"><span class="icon icon--twitter" aria-hidden="true"></span></a>
-        </li>
-        <li>
           <a href="https://www.youtube.com/channel/UC7lcVN333GhQp1b2tnAG56A/playlists" title="YouTube"><span class="icon icon--youtube" aria-hidden="true"></span></a>
         </li>
         <li>
@@ -42,7 +39,24 @@
         </li>
       </ul>
     </div>
-    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      (() => {
+        const colors = [
+          '#3498db',
+          '#c0392b',
+          '#16a085',
+          '#2980b9',
+          '#2c3e50',
+          '#d35400',
+          '#e67e22'
+        ];
+
+        setInterval(() => {
+          const color = colors[Math.floor(Math.random() * colors.length)];
+          document.body.style.backgroundColor = color;
+        }, 30000);
+      })();
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-99CGC09EQH"></script>
     <script>
