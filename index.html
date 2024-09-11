@@ -49,12 +49,17 @@
           '#16a085',
           '#2980b9',
           '#2c3e50',
+          '#d35400',
         ];
 
-        setInterval(() => {
+        const changeBgColor = () => {
           const color = colors[Math.floor(Math.random() * colors.length)];
           document.body.style.backgroundColor = color;
-        }, 60000);
+        };
+
+        changeBgColor();
+
+        setInterval(changeBgColor, 60000);
       })();
     </script>
     <!-- Cloudflare Web Analytics -->
