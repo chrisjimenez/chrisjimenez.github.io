@@ -1,3 +1,10 @@
+:root {
+  --default-bg-color: #D35400;
+  --text-color: #FFFFFF;
+  --font-family: 'Lato', sans-serif;
+  --transition-time: 0.3s;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -8,22 +15,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #D35400;
+  background-color: var(--default-bg-color);
   transition: background-color 2s ease-in-out;
 }
 
 .container {
-  display: bblock;
+  display: block;
   max-width: 400px;
   width: 100%;
 }
 
+/* Typography */
 .container .header,
 .container .bio {
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font-family);
   font-weight: 300;
-  color: #FFFFFF;
+  color: var(--text-color);
 }
 
 .container .header {
@@ -37,10 +45,11 @@ body {
 }
 
 .container .bio a {
-  color: #FFFFFF;
+  color: var(--text-color);
   text-decoration: none;
 }
 
+/* Icon List */
 .container .icon-list {
   display: block;
   margin: 0 1em;
