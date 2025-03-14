@@ -31,7 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--default-bg-color);
-  animation: backgroundColorChange 10s infinite;
+  animation: backgroundColorChange 150s infinite;
   animation-timing-function: ease-in-out;
 }
 
@@ -87,7 +87,7 @@ body {
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  transition: opacity .3s ease-in-out;
+  transition: opacity .15s ease-in-out;
 }
 
 .container .icon-list:hover .icon {
