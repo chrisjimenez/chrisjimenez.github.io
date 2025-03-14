@@ -1,9 +1,9 @@
 /* TEAM */
 
-Chris Jimenez - software engineer in NY
-chrisajim@gmail.com
+Chris Jimenez – Software Engineer, NY
+Email: chrisajim@gmail.com
 
 /* SITE */
 
-Last update: 2019/02/27
-Standards: HTML5, CSS3,..
+Last updated: 2024/03/14
+Standards: HTML5, CSS3
