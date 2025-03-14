@@ -74,7 +74,9 @@ body {
 }
 
 .container .icon-list a {
+  display: flex;
   font-size: 1.25rem;
+  text-decoration: none;
 }
 
 .container .icon-list .icon {
