@@ -19,29 +19,45 @@
     <link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
-    <div class="container">
-      <h1 class="header">Hey! I'm Chris.</h1>
-      <p class="bio">
-        I'm an engineering manager at <a href="http://www.time.com/"><em>TIME</em></a>. <br /> Get in touch or check out my work below!
-      </p>
-      <ul class="icon-list">
-        <li>
-          <a href="https://www.github.com/chrisjimenez" title="GitHub"><span class="icon icon--github" aria-hidden="true"></span></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/chrisajim/" title="LinkedIn"><span class="icon icon--linkedin" aria-hidden="true"></span></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/channel/UC7lcVN333GhQp1b2tnAG56A/playlists" title="YouTube"><span class="icon icon--youtube" aria-hidden="true"></span></a>
-        </li>
-        <li>
-          <a href="mailto:chrisajim@gmail.com" title="Email"><span class="icon icon--email" aria-hidden="true"></span></a>
-        </li>
-        <li>
-          <a href="https://drive.google.com/file/d/13SXTWYczNKfQUV_oDuWtX1wNCit8lCeP/view?usp=sharing" title="Resume"><span class="icon icon--resume" aria-hidden="true"></span></a>
-        </li>
-      </ul>
-    </div>
+    <main class="container">
+      <header>
+        <h1 class="header">Hey! I'm Chris.</h1>
+      </header>
+      <section>
+        <p class="bio">
+          I'm an engineering manager at <a href="http://www.time.com/" aria-label="TIME Magazine website"><em>TIME</em></a>. <br> Get in touch or check out my work below!
+        </p>
+      </section>
+      <nav aria-label="Social media links">
+        <ul class="icon-list">
+          <li>
+            <a href="https://www.github.com/chrisjimenez" title="GitHub" aria-label="Visit my GitHub profile">
+              <span class="icon icon--github" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/chrisajim/" title="LinkedIn" aria-label="Connect with me on LinkedIn">
+              <span class="icon icon--linkedin" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UC7lcVN333GhQp1b2tnAG56A/playlists" title="YouTube" aria-label="Watch my YouTube videos">
+              <span class="icon icon--youtube" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:chrisajim@gmail.com" title="Email" aria-label="Send me an email">
+              <span class="icon icon--email" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/13SXTWYczNKfQUV_oDuWtX1wNCit8lCeP/view?usp=sharing" title="Resume" aria-label="View my resume">
+              <span class="icon icon--resume" aria-hidden="true"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
     <script type="text/javascript">
       (() => {
         const colors = [
