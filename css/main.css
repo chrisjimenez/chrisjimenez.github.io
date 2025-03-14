@@ -1,8 +1,23 @@
 :root {
-  --default-bg-color: #D35400;
+  /* Rich earth-tone palette */
+  --color-ocean: #2e4a4e;
+  --color-forest: #567356;
+  --color-olive: #354531;
+  --color-burgundy: #5b2a2a;
+  --color-brick: #6e3838;
+  --color-taupe: #7d6750;
+
+  --default-bg-color: var(--color-ocean);
   --text-color: #FFFFFF;
   --font-family: 'Lato', sans-serif;
-  --transition-time: 0.3s;
+}
+
+@keyframes backgroundColorChange {
+  0%, 100% { background-color: var(--color-ocean); }
+  20% { background-color: var(--color-forest); }
+  40% { background-color: var(--color-olive); }
+  60% { background-color: var(--color-burgundy); }
+  80% { background-color: var(--color-brick); }
 }
 
 html, body {
@@ -16,7 +31,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--default-bg-color);
-  transition: background-color 2s ease-in-out;
+  animation: backgroundColorChange 10s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .container {
