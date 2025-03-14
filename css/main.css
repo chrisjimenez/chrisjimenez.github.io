@@ -37,50 +37,48 @@ body {
 
 .container {
   display: block;
-  max-width: 25rem;
-  width: 100%;
+  max-width: 25em;
+  padding: 0 2em;
 }
 
-/* Typography */
 .container .header,
-.container .bio {
-  text-align: center;
+.container .body {
   font-family: var(--font-family);
-  font-weight: 300;
   color: var(--text-color);
 }
 
 .container .header {
-  font-size: 3em;
+  font-size: 2.25em;
+  font-weight: 400;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
-.container .bio {
-  font-size: 1.3em;
-  line-height: 1.4em;
-  letter-spacing: .03em;
+.container .body {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.75;
 }
 
-.container .bio a {
+.container .body a {
   color: var(--text-color);
   text-decoration: none;
 }
 
-/* Icon List */
 .container .icon-list {
-  display: block;
-  margin: 0 1em;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
   list-style: none;
   padding: 0;
+  gap: 1.25em;
+  margin: 0;
 }
 
 .container .icon-list li {
   display: inline-block;
-  margin: 1em;
 }
 
 .container .icon-list a {
-  font-size: 2em;
+  font-size: 1.25rem;
 }
 
 .container .icon-list .icon {
